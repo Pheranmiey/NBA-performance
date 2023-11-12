@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Game Prediction</h1>
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+      <input type="text" name="GamesPlayed" placeholder="GamesPlayed" required="required" /><br>
+    	<input type="text" name="MinutesPlayed" placeholder="MinutesPlayed" required="required" /><br>
+        <input type="text" name="PointsPerGame" placeholder="PointsPerGame" required="required" /><br>
+        <input type="text" name="FieldGoalsMade" placeholder="FieldGoalsMade" required="required" /><br>
+        <input type="text" name="FieldGoalAttempts" placeholder="FieldGoalAttempts" required="required" /><br>
+        <input type="text" name="FieldGoalPercent" placeholder="FieldGoalPercent" required="required" /><br>
+        <input type="text" name="PointMade" placeholder="PointMade" required="required" /><br>
+        <input type="text" name="PointAttempt" placeholder="PointAttempt" required="required" /><br>
+        <input type="text" name="PointPercent" placeholder="PointPercent" required="required" /><br>
+        <input type="text" name="FreeThrowMade" placeholder="FreeThrowMade" required="required" /><br>
+        <input type="text" name="FreeThrowAttempts" placeholder="FreeThrowAttempts" required="required" /><br>
+        <input type="text" name="FreeThrowPercent" placeholder="FreeThrowPercent" required="required" /><br>
+        <input type="text" name="OffensiveRebounds" placeholder="OffensiveRebounds" required="required" /><br>
+        <input type="text" name="DefensiveRebounds" placeholder="DefensiveRebounds" required="required" /><br>
+        <input type="text" name="Rebounds" placeholder="Rebounds" required="required" /><br>
+        <input type="text" name="Assists" placeholder="Assists" required="required" /><br>
+        <input type="text" name="Steals" placeholder="Steals" required="required" /><br>
+        <input type="text" name="Blocks" placeholder="Blocks" required="required" /><br>
+        <input type="text" name="Turnovers" placeholder="Turnovers" required="required" /><br>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>
