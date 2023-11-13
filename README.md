@@ -14,3 +14,4 @@ To access your flask application open new tab in and paste the url:
 ```
 https://{your_url}.pwskills.app:5000/
 ```
+app: http://nba-performancepredictor-env.eba-qmpjjtct.eu-north-1.elasticbeanstalk.com/predictdata
